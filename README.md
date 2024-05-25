@@ -1,6 +1,6 @@
 # EDHDeckRater
 
-When playing casual EDH it is often a complicated discussion to evaluate the power level of decks. I propose a automated grader based on objective criterion. 
+When playing casual EDH it is often a complicated discussion to evaluate the power level of decks. I propose a automated grader based on somewhat objective criterion.
 
 The input should be a decklist (I will start to work to import decklist from deckstats) and the output a radar chart of different stats for the deck.
 
@@ -8,10 +8,9 @@ I want to develop multiple score categories each ranging from 1 to 5
 
 The end result should look similar to this
 
-
 ![example_chart](./figures/example_chart.png)
 
-Metrics ideas 
+Metrics ideas
 
 ### Budget
 
@@ -31,12 +30,11 @@ e.g.
 * mana crypt .5
 * moxes .3
 * dockside: .5
-* 
+* ...
 
+### Card advantage / Tutor potential
 
-
-### Card advantage potential
-
+The potential of the deck to see cards, includes card draw but also tutors
 
 ### Fast win potential
 
@@ -46,8 +44,7 @@ Also some instant win cards would be flagged (e.g. approach of the second sun)
 
 Maybe some cards that tend to win when played could be marked (thassa's oracle, livind death, ...)
 
-Some aggro cards could be marked: 
-
+Some aggro cards could be marked:
 
 ### Commander rating
 
@@ -62,7 +59,6 @@ based on the number of such cards in the deck we could infer a score.
 ### Salt level
 
 Based on EDHREC salt level.
-
 
 ## Project Structure
 
