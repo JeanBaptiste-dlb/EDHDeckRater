@@ -20,9 +20,15 @@ The application should be able to find the cheapest price for each card in the d
 
 My idea is that each 200 \$ would add 1 point, leading to 5 point for a deck over 1000 \$
 
-### Fast mana potential
+### mana production potential
 
 Some cards are known for producing fast mana, those cards could receive a score and then the sum of such scores would give the deck a grading.
+
+3 categories:
+
+Each category can account for a maximum number of points so that a deck that is very focused for example deck focused on treasure does not necessarily score to high if it does not contain the mana crypt/ solr ring/ ...
+
+#### fast mana:
 
 e.g.
 
@@ -31,6 +37,14 @@ e.g.
 * moxes .3
 * dockside: .5
 * ...
+* Fetch, number of land that arrive untap, ...
+
+#### general ramp
+
+
+#### lands
+
+
 
 ### Card advantage / Tutor potential
 
@@ -58,7 +72,15 @@ based on the number of such cards in the deck we could infer a score.
 
 ### Salt level
 
-Based on EDHREC salt level.
+Based on EDHREC salt level
+
+
+## Score aggregator
+
+weighted average of the different scores to make a final score.
+
+
+or a model trained to predict a fnal score based on stats
 
 ## Project Structure
 
